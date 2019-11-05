@@ -58,6 +58,7 @@ int ttytie (int argc, char const* argv[], double delay)
         } while (read_header (fp, &sec, &usec, &len));
     } 
 
+    free (data);
     return 0;
 }
 

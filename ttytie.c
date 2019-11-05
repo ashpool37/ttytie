@@ -49,6 +49,7 @@ int ttytie (int argc, char const* argv[], double delay)
             {
                 free (data);
                 data = malloc(len);
+		alloc_size = len;
             }    
 
             if (len != fread (data, 1, len, fp))
